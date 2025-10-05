@@ -1,5 +1,5 @@
 body {
-    background-color:darksalmon;
+    background-color: bisque;
 }
 
 h1 {
@@ -11,12 +11,55 @@ h1 {
     text-align: center;
 }
 
-#gameCanvas {
-    width: 1200px; 
-    height: 700px;
-    border: 4px solid #333; 
-    border-radius: 8px;
-    background: #fafafa; 
-    display: block;
-    margin: 25px auto 0; 
-  }
+.instruction {
+    background-color: white;
+    width: 50%;
+    height: 60px;
+    margin: 20px auto;
+    border: 4px solid #333;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.instruction h2 {
+    font-size: 40px;
+    font-family: "DynaPuff", system-ui;
+    color:rgb(0, 0, 0);
+    font-weight: 400;
+    font-style: normal;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+}
+
+.game-surface {
+  width: 1200px;
+  height: 750px;
+  border: 4px solid #333;
+  border-radius: 8px;
+  background-image: url("images/shop-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 25px auto 0;
+  position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container button {
+  border: 4px solid #333;
+  width: 5;
+  height: 10;
+  cursor: pointer;
+}
+
+.container button img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}

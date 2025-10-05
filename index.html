@@ -4,15 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mix and Match</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.jpg">
         <link rel="stylesheet" href="style.css">
         <!-- Imported Title Font from Google-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oi&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Oi&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
     </head>
     <body>
         <h1>Mix and Match!</h1>
-        <canvas id="gameCanvas" width="550" height="400"></canvas>
+        <div class="game-surface">
+            <div class="instruction">
+                <h2>Match the price below!</h2>
+            </div>
+            <div class="container">
+                <button><img src="food-items/bread.jpg" alt="Bread"></button>
+                <button><img src="food-items/milk.jpg" alt="Milk"></button>
+                <button><img src="food-items/noodles.jpg" alt="Noodles"></button>
+            </div>
+        </div>
         <script src="app.js"></script>
     </body>
 </html>
