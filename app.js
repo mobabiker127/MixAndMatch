@@ -1,6 +1,17 @@
+// food item buttons
 const noodles = document.getElementById("noodles");
 const bread = document.getElementById("bread");
 const milk = document.getElementById("milk");
+
+// possible prices
+
+ const price = [5, 10, 15, 20, 25];
+
+// generate price to match
+function getRandomPrice() {
+    const randomIndex = Math.floor(Math.random() * price.length);
+    return price[randomIndex];
+}
 
 addPrice: (button) => {
     switch(button) {
@@ -15,3 +26,6 @@ addPrice: (button) => {
             break;
     }
 }
+
+const randomPrice = getRandomPrice();
+document.getElementById('price').textContent = `$${randomPrice}`;
